@@ -1,0 +1,1879 @@
+2014/01/22 07:55:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in C:\wamp\www\yii1\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\yii1\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii1\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\yii1\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\wamp\www\yii1\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\wamp\www\yii1\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\wamp\www\yii1\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\wamp\www\yii1\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/index.php/gii/model/index
+HTTP_REFERER=http://localhost/trackstar/index.php/gii/default/index
+---
+2014/01/22 10:55:19 [error] [exception.CException] exception 'CException' with message 'EJuiDateTimePicker - unknown mode: "datetime default". Use time, datetime or date!' in C:\wamp\www\trackstar\protected\extensions\jui\EJuiDateTimePicker.php:52
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CBaseController.php(147): EJuiDateTimePicker->init()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.jui.EJuiDat...', Array)
+#2 C:\wamp\www\trackstar\protected\views\project\_form.php(76): CBaseController->widget('ext.jui.EJuiDat...', Array)
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#5 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\trackstar\protected\views\project\create.php(18): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#9 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#10 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(79): CController->render('create', Array)
+#12 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#13 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#22 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#23 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/trackstar/index.php/project/create
+HTTP_REFERER=http://localhost/trackstar/index.php/project/1
+---
+2014/01/23 07:28:08 [error] [exception.CException] exception 'CException' with message 'Issue and its behaviors do not have a method or closure named "getTypeOptions".' in C:\wamp\www\yii1\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getTypeOptions', Array)
+#1 C:\wamp\www\trackstar\protected\views\issue\_form.php(43): CActiveRecord->__call('getTypeOptions', Array)
+#2 C:\wamp\www\trackstar\protected\views\issue\_form.php(43): Issue->getTypeOptions()
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#5 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\trackstar\protected\views\issue\create.php(18): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#9 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#10 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\trackstar\protected\controllers\IssueController.php(79): CController->render('create', Array)
+#12 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#13 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#22 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#23 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/23 12:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "isuue".' in C:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('isuue')
+#1 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php/isuue
+---
+2014/01/23 12:25:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "isue".' in C:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('isue')
+#1 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php/isue
+---
+2014/01/23 12:52:29 [error] [exception.CException] exception 'CException' with message 'Property "IssueController._project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('_project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/23 12:54:46 [error] [exception.CException] exception 'CException' with message 'Property "IssueController._project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('_project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/23 12:55:10 [error] [exception.CException] exception 'CException' with message 'Property "IssueController.project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+---
+2014/01/23 12:56:33 [error] [exception.CException] exception 'CException' with message 'Property "IssueController.tbl_project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('tbl_project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+---
+2014/01/23 12:58:04 [error] [exception.CException] exception 'CException' with message 'Property "IssueController.project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+---
+2014/01/23 12:59:05 [error] [exception.CException] exception 'CException' with message 'Property "IssueController.project" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(66): CComponent->__get('project')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+---
+2014/01/23 13:05:07 [error] [php] Trying to get property of non-object (C:\wamp\www\trackstar\protected\controllers\IssueController.php:91)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#1 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#8 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/create
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (91)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/23 13:05:56 [error] [php] Trying to get property of non-object (C:\wamp\www\trackstar\protected\controllers\IssueController.php:91)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#1 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#8 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/create
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (91)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/23 13:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/23 15:25:19 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.CGdidView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\yii1\framework\YiiBase.php:322
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.CGd...', true)
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProjectController), 'zii.widgets.CGd...', Array)
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CGd...', Array)
+#3 C:\wamp\www\trackstar\protected\views\project\view.php(33): CBaseController->widget('zii.widgets.CGd...', Array)
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(56): CController->render('view', Array)
+#9 [internal function]: ProjectController->actionView('1')
+#10 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#11 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#22 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/trackstar/index.php/project/1
+HTTP_REFERER=http://localhost/trackstar/index.php/project
+---
+2014/01/23 15:26:13 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.data" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Object(Project))
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProjectController), 'zii.widgets.gri...', Array)
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp\www\trackstar\protected\views\project\view.php(33): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(56): CController->render('view', Array)
+#9 [internal function]: ProjectController->actionView('1')
+#10 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#11 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#22 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/trackstar/index.php/project/1
+HTTP_REFERER=http://localhost/trackstar/index.php/project
+---
+2014/01/23 15:27:13 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.data" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Object(CActiveDataProvider))
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProjectController), 'zii.widgets.gri...', Array)
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp\www\trackstar\protected\views\project\view.php(33): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(56): CController->render('view', Array)
+#9 [internal function]: ProjectController->actionView('1')
+#10 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#11 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#22 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/trackstar/index.php/project/1
+HTTP_REFERER=http://localhost/trackstar/index.php/project
+---
+2014/01/23 15:28:59 [error] [php] include(Post.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii1\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\wamp\www\yii1\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\wamp\www\trackstar\protected\views\project\view.php(22): CActiveDataProvider->__construct()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(56): ProjectController->render()
+#9 unknown(0): ProjectController->actionView()
+#10 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#11 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#14 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#20 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/1
+in C:\wamp\www\trackstar\protected\views\project\view.php (22)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (56)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/23 15:29:11 [error] [php] include(Post.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii1\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\wamp\www\yii1\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\wamp\www\trackstar\protected\views\project\view.php(22): CActiveDataProvider->__construct()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(56): ProjectController->render()
+#9 unknown(0): ProjectController->actionView()
+#10 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#11 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#14 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#20 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#21 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/1
+in C:\wamp\www\trackstar\protected\views\project\view.php (22)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (56)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 10:23:15 [error] [php] Missing argument 1 for ProjectController::loadModel(), called in C:\wamp\www\trackstar\protected\controllers\ProjectController.php on line 57 and defined (C:\wamp\www\trackstar\protected\controllers\ProjectController.php:164)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/1
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (164)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (57)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 10:46:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (121)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (48)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 10:46:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\trackstar\protected\controllers\IssueController.php(121): CActiveRecord->save()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\trackstar\protected\controllers\IssueController.php(48): CFilterChain->run()
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#17 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php/issue/create?pid=2
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=2
+---
+2014/01/24 10:51:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (121)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (48)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 10:51:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\trackstar\protected\controllers\IssueController.php(121): CActiveRecord->save()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\trackstar\protected\controllers\IssueController.php(48): CFilterChain->run()
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#17 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php/issue/create?pid=2
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=2
+---
+2014/01/24 11:28:46 [error] [php] include(TblUser.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(280): Issue->getActiveFinder()
+#6 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(181): Issue->getRelated()
+#7 C:\wamp\www\trackstar\protected\views\issue\view.php(37): Issue->__isset()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#10 C:\wamp\www\yii1\framework\web\CController.php(869): IssueController->renderFile()
+#11 C:\wamp\www\yii1\framework\web\CController.php(782): IssueController->renderPartial()
+#12 C:\wamp\www\trackstar\protected\controllers\IssueController.php(104): IssueController->render()
+#13 unknown(0): IssueController->actionView()
+#14 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#15 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#18 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#21 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#24 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#25 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/1
+in C:\wamp\www\trackstar\protected\views\issue\view.php (37)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (104)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 11:28:57 [error] [php] include(TblUser.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(280): Issue->getActiveFinder()
+#6 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(181): Issue->getRelated()
+#7 C:\wamp\www\trackstar\protected\views\issue\view.php(37): Issue->__isset()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#10 C:\wamp\www\yii1\framework\web\CController.php(869): IssueController->renderFile()
+#11 C:\wamp\www\yii1\framework\web\CController.php(782): IssueController->renderPartial()
+#12 C:\wamp\www\trackstar\protected\controllers\IssueController.php(104): IssueController->render()
+#13 unknown(0): IssueController->actionView()
+#14 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#15 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#18 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#21 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#24 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#25 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/1
+in C:\wamp\www\trackstar\protected\views\issue\view.php (37)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (104)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 11:35:02 [error] [php] include(tbl_user.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\wamp\www\yii1\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(280): Issue->getActiveFinder()
+#6 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(181): Issue->getRelated()
+#7 C:\wamp\www\trackstar\protected\views\issue\view.php(37): Issue->__isset()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#10 C:\wamp\www\yii1\framework\web\CController.php(869): IssueController->renderFile()
+#11 C:\wamp\www\yii1\framework\web\CController.php(782): IssueController->renderPartial()
+#12 C:\wamp\www\trackstar\protected\controllers\IssueController.php(104): IssueController->render()
+#13 unknown(0): IssueController->actionView()
+#14 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#15 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#18 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#21 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#24 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#25 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/1
+in C:\wamp\www\trackstar\protected\views\issue\view.php (37)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (104)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/24 11:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/1
+---
+2014/01/24 11:42:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create
+---
+2014/01/24 11:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/24 11:43:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/site/contact
+---
+2014/01/24 11:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=1
+---
+2014/01/24 11:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=1
+---
+2014/01/24 11:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/24 11:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue
+---
+2014/01/24 11:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/6
+---
+2014/01/24 11:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/6
+---
+2014/01/24 12:49:11 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.itemView" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(161): CComponent->__set('itemView', '_view')
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'zii.widgets.gri...', Array)
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp\www\trackstar\protected\views\user\index.php(20): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\trackstar\protected\controllers\UserController.php(128): CController->render('index', Array)
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trackstar/index.php/user
+HTTP_REFERER=http://localhost/trackstar/index.php/project/index
+---
+2014/01/27 11:34:42 [warning] [application] Failed to set unsafe attribute "last_login_time" of "User".
+in C:\wamp\www\trackstar\protected\controllers\UserController.php (72)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/27 11:35:29 [warning] [application] Failed to set unsafe attribute "last_login_time" of "User".
+in C:\wamp\www\trackstar\protected\controllers\UserController.php (72)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/27 11:41:14 [warning] [application] Failed to set unsafe attribute "last_login_time" of "User".
+in C:\wamp\www\trackstar\protected\controllers\UserController.php (72)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/27 11:41:14 [warning] [application] Failed to set unsafe attribute "create_time" of "User".
+in C:\wamp\www\trackstar\protected\controllers\UserController.php (72)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/27 11:41:14 [warning] [application] Failed to set unsafe attribute "update_time" of "User".
+in C:\wamp\www\trackstar\protected\controllers\UserController.php (72)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/27 13:53:53 [error] [exception.CException] exception 'CException' with message 'Property "User.password_repeat" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password_repeat')
+#1 C:\wamp\www\yii1\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('password_repeat')
+#2 C:\wamp\www\yii1\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'password_repeat')
+#3 C:\wamp\www\yii1\framework\web\helpers\CHtml.php(1628): CHtml::activeInputField('password', Object(User), 'password_repeat', Array)
+#4 C:\wamp\www\yii1\framework\web\widgets\CActiveForm.php(771): CHtml::activePasswordField(Object(User), 'password_repeat', Array)
+#5 C:\wamp\www\trackstar\protected\views\user\_form.php(41): CActiveForm->passwordField(Object(User), 'password_repeat', Array)
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#8 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#9 C:\wamp\www\trackstar\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#11 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\yii1\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#13 C:\wamp\www\yii1\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\trackstar\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#16 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#26 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/trackstar/index.php/user/create
+HTTP_REFERER=http://localhost/trackstar/index.php/user/index
+---
+2014/01/29 10:03:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform	this action.' in C:\wamp\www\trackstar\protected\controllers\ProjectController.php:192
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('1')
+#1 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php/project/adduser/1
+HTTP_REFERER=http://localhost/trackstar/index.php/project/1
+---
+2014/01/29 10:05:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform	this action.' in C:\wamp\www\trackstar\protected\controllers\ProjectController.php:192
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('2')
+#1 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php/project/adduser/2
+HTTP_REFERER=http://localhost/trackstar/index.php/project/2
+---
+2014/01/29 10:14:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform	this action.' in C:\wamp\www\trackstar\protected\controllers\ProjectController.php:192
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php/project/adduser/4
+HTTP_REFERER=http://localhost/trackstar/index.php/project/4
+---
+2014/01/29 10:43:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform	this action.' in C:\wamp\www\trackstar\protected\controllers\ProjectController.php:192
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('1')
+#1 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php/project/adduser/1
+HTTP_REFERER=http://localhost/trackstar/index.php/project/1
+---
+2014/01/29 12:22:19 [error] [php] Use of undefined constant php - assumed 'php' (C:\wamp\www\trackstar\protected\views\comment\_form.php:53)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(869): IssueController->renderFile()
+#1 C:\wamp\www\trackstar\protected\views\issue\view.php(61): IssueController->renderPartial()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#4 C:\wamp\www\yii1\framework\web\CController.php(869): IssueController->renderFile()
+#5 C:\wamp\www\yii1\framework\web\CController.php(782): IssueController->renderPartial()
+#6 C:\wamp\www\trackstar\protected\controllers\IssueController.php(108): IssueController->render()
+#7 unknown(0): IssueController->actionView()
+#8 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/1
+in C:\wamp\www\trackstar\protected\views\comment\_form.php (53)
+in C:\wamp\www\trackstar\protected\views\issue\view.php (61)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (108)
+2014/01/29 13:29:36 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:31:49 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:31:54 [error] [php] Undefined variable: withComments (C:\wamp\www\trackstar\protected\controllers\IssueController.php:213)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/4
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (213)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (103)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:31:58 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:33:29 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:33:34 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:39:46 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:39:52 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:40:39 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:40:45 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:40:48 [error] [php] include(RecentCommentsWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii1\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWidgetFactory.php(146): import()
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(172): ProjectController->createWidget()
+#3 C:\wamp\www\trackstar\protected\views\project\index.php(34): ProjectController->widget()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii1\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#6 C:\wamp\www\yii1\framework\web\CController.php(869): ProjectController->renderFile()
+#7 C:\wamp\www\yii1\framework\web\CController.php(782): ProjectController->renderPartial()
+#8 C:\wamp\www\trackstar\protected\controllers\ProjectController.php(137): ProjectController->render()
+#9 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#10 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#12 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#15 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): ProjectController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/project/index
+in C:\wamp\www\trackstar\protected\views\project\index.php (34)
+in C:\wamp\www\trackstar\protected\controllers\ProjectController.php (137)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:44:17 [error] [php] Undefined variable: withComments (C:\wamp\www\trackstar\protected\controllers\IssueController.php:213)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/4
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (213)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (103)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:45:12 [error] [php] Undefined variable: withComments (C:\wamp\www\trackstar\protected\controllers\IssueController.php:213)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/4
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (213)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (103)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:46:12 [error] [php] Undefined variable: withComments (C:\wamp\www\trackstar\protected\controllers\IssueController.php:213)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/4
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (213)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (103)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/29 13:47:44 [error] [php] Undefined variable: withComments (C:\wamp\www\trackstar\protected\controllers\IssueController.php:213)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): IssueController->runAction()
+#4 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii1\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#7 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii1\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): IssueController->run()
+#11 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/issue/4
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (213)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (103)
+in C:\wamp\www\trackstar\index.php (13)
+2014/01/30 10:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=comment/feed".' in C:\wamp\www\yii1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('r=comment/feed')
+#1 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php/r=comment/feed
+---
+2014/02/04 11:49:30 [error] [php] Use of undefined constant php - assumed 'php' (C:\wamp\www\trackstar\protected\views\layouts\newlayout.php:41)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#1 C:\wamp\www\trackstar\protected\controllers\SiteController.php(34): SiteController->render()
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\layouts\newlayout.php (41)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (34)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/04 11:51:30 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\layouts\newlayout.php:28)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#1 C:\wamp\www\trackstar\protected\controllers\SiteController.php(34): SiteController->render()
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\layouts\newlayout.php (28)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (34)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/04 14:20:26 [error] [php] Use of undefined constant php - assumed 'php' (C:\wamp\www\trackstar\protected\views\layouts\newlayout.php:41)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#1 C:\wamp\www\trackstar\protected\controllers\SiteController.php(34): SiteController->render()
+#2 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/site/index
+in C:\wamp\www\trackstar\protected\views\layouts\newlayout.php (41)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (34)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/05 08:03:24 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\site\login.php:28)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii1\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php
+in C:\wamp\www\trackstar\protected\views\site\login.php (28)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (35)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/05 08:03:29 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\site\login.php:28)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii1\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\site\login.php (28)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (35)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/05 08:12:30 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.loginForm" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\SiteController.php(36): CComponent->__get('loginForm')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 08:12:43 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.home" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\SiteController.php(36): CComponent->__get('home')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 08:12:47 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.home" is not defined.' in C:\wamp\www\yii1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\SiteController.php(36): CComponent->__get('home')
+#1 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:23:31 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "loginform".' in C:\wamp\www\yii1\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CController->renderPartial('loginform', Array)
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#3 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#11 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#13 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:23:55 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "loginForm".' in C:\wamp\www\yii1\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CController->renderPartial('loginForm', Array)
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#3 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#11 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#13 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:24:00 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "loginForm".' in C:\wamp\www\yii1\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CController->renderPartial('loginForm', Array)
+#1 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#3 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#11 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#13 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:24:45 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\site\login.php:28)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): SiteController->renderPartial()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#5 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(206): CContentDecorator->run()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(300): SiteController->endWidget()
+#9 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): SiteController->endContent()
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#11 C:\wamp\www\yii1\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#12 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#13 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): SiteController->render()
+#14 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\site\login.php (28)
+in C:\wamp\www\trackstar\protected\views\layouts\main.php (3)
+in C:\wamp\www\trackstar\protected\views\layouts\column1.php (6)
+2014/02/05 10:25:49 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\layouts\main.php:3)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): SiteController->render()
+#10 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\layouts\main.php (3)
+in C:\wamp\www\trackstar\protected\views\layouts\column1.php (6)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (35)
+2014/02/05 10:26:15 [error] [php] Undefined variable: loginForm (C:\wamp\www\trackstar\protected\views\layouts\main.php:3)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\wamp\www\yii1\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require()
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\wamp\www\yii1\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): SiteController->render()
+#10 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/
+in C:\wamp\www\trackstar\protected\views\layouts\main.php (3)
+in C:\wamp\www\trackstar\protected\views\layouts\column1.php (6)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (35)
+2014/02/05 10:27:11 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getLoginForm".' in C:\wamp\www\yii1\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CComponent->__call('getLoginForm', Array)
+#1 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): SiteController->getLoginForm()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#5 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#11 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#13 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#14 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:36:19 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getLoginForm".' in C:\wamp\www\yii1\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CComponent->__call('getLoginForm', Array)
+#1 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): SiteController->getLoginForm()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#5 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#11 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#13 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#14 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:37:21 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getLoginForm".' in C:\wamp\www\yii1\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): CComponent->__call('getLoginForm', Array)
+#1 C:\wamp\www\trackstar\protected\views\layouts\main.php(3): SiteController->getLoginForm()
+#2 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#3 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#4 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#5 C:\wamp\www\yii1\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\yii1\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\yii1\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii1\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\trackstar\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\yii1\framework\web\CBaseController.php(126): require('C:\wamp\www\tra...')
+#11 C:\wamp\www\yii1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\tra...', Array, true)
+#12 C:\wamp\www\yii1\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\tra...', Array, true)
+#13 C:\wamp\www\trackstar\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#14 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trackstar/
+---
+2014/02/05 10:51:57 [error] [php] Undefined variable: model (C:\wamp\www\trackstar\protected\views\site\index.php:28)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii1\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\trackstar\protected\controllers\SiteController.php(36): SiteController->render()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php
+in C:\wamp\www\trackstar\protected\views\site\index.php (28)
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (36)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/05 11:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php/site/about
+---
+2014/02/05 11:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\wamp\www\yii1\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\wamp\www\yii1\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\www\yii1\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\www\yii1\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page/about')
+#7 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/trackstar/index.php/site/page/about
+---
+2014/02/05 11:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\wamp\www\yii1\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(270): CController->missingAction('pages')
+#1 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php/site/pages/about
+---
+2014/02/05 11:59:38 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\trackstar\protected\controllers\SiteController.php:85)
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii1\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\wamp\www\yii1\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php/site/contact
+in C:\wamp\www\trackstar\protected\controllers\SiteController.php (85)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/13 07:39:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\trackstar\protected\modules\admin\AdminModule.php:27
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php/admin/default/index
+HTTP_REFERER=http://localhost/trackstar/index.php/user/index
+---
+2014/02/13 07:41:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\trackstar\protected\modules\admin\AdminModule.php:27
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php/admin/default/index
+HTTP_REFERER=http://localhost/trackstar/index.php/user/index
+---
+2014/02/13 07:43:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\trackstar\protected\modules\admin\AdminModule.php:27
+Stack trace:
+#0 C:\wamp\www\yii1\framework\web\CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/index.php/admin/default/index
+HTTP_REFERER=http://localhost/trackstar/index.php/user/index
+---
+2014/02/27 07:11:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`, `create_user_id`, `update_user_id`, `create_time`, `update_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, NOW(), NOW()).
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (125)
+in C:\wamp\www\trackstar\protected\controllers\IssueController.php (48)
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/27 07:11:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar_dev`.`tbl_issue`, CONSTRAINT `FK_issue_owner` FOREIGN KEY (`owner_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `tbl_issue` (`project_id`, `name`, `description`, `type_id`, `status_id`, `create_user_id`, `update_user_id`, `create_time`, `update_time`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, NOW(), NOW())' in C:\wamp\www\yii1\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii1\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\trackstar\protected\controllers\IssueController.php(125): CActiveRecord->save()
+#3 C:\wamp\www\yii1\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#4 C:\wamp\www\yii1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\trackstar\protected\controllers\IssueController.php(48): CFilterChain->run()
+#7 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#8 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#17 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php/issue/create?pid=5
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=5
+---
+2014/03/28 07:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+	exist.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:22
+Stack trace:
+#0 C:\wamp\www\trackstar\protected\controllers\IssueController.php(46): IssueController->loadProject(NULL)
+#1 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii1\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\yii1\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii1\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\wamp\www\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#11 C:\wamp\www\yii1\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/trackstar/index.php/issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php/issue/create?pid=1
+---
